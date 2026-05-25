@@ -10,6 +10,13 @@
 
         //Navigation property to the UserProfile entity
         public UserProfile UserProfile { get; set; }
+
+        //one to many relationship between User and Orders,
+        //where a User can have multiple Orders, but each Order is associated with only one User.
+
+        public ICollection<OrderModel> Orders { get; set; } = new List<OrderModel>();
+
+
     }
 }
 

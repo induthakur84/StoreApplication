@@ -13,7 +13,13 @@ namespace Order.Data.Configuration
             builder.HasOne(p => p.User)
                    .WithOne(u => u.UserProfile)
                    .HasForeignKey<UserProfile>(up => up.UserId)
-                   .OnDelete(DeleteBehavior.Restrict);
+                   .OnDelete(DeleteBehavior.Cascade);
+
+
+            //Cascade Delete Behavior:
+
+
+            //if a user is deleted, then related UserProfile will also be automatically deleted from the database. 
         }
     }
 }

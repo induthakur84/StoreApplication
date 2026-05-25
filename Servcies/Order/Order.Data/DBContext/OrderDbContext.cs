@@ -16,6 +16,7 @@ namespace Order.Data.DBContext
         }
         public DbSet<OrderModel> Orders { get; set; }
         public DbSet<Product> Products { get; set; }
+        public DbSet<Category> Categories { get; set; }
 
 
 
@@ -23,3 +24,6 @@ namespace Order.Data.DBContext
 
     }
 }
+
+
+//one user have mulitple orders, but each order is associated with only one user.
