@@ -8,7 +8,6 @@
 
   <ItemGroup>
     <Folder Include="Automapper\" />
-    <Folder Include="Interfaces\" />
     <Folder Include="Services\" />
   </ItemGroup>
 
@@ -26,6 +25,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\BuildingBlocks\Middleware\Middleware.csproj" />
     <ProjectReference Include="..\Order.DTO\Order.DTO.csproj" />
   </ItemGroup>
 
